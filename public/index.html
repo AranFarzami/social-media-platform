@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Twitter | Welcome</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1DA1F2, #0d8bd9);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 50px;
+            width: 500px;
+            max-width: 90%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 50px;
+            color: #1DA1F2;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            display: block;
+            padding: 16px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: #1DA1F2;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #0d8bd9;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(29, 161, 242, 0.4);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #1DA1F2;
+            border: 2px solid #1DA1F2;
+        }
+
+        .btn-secondary:hover {
+            background: #f0f8ff;
+            transform: translateY(-2px);
+        }
+
+        .features {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #eef2f7;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .feature-item {
+            text-align: center;
+        }
+
+        .feature-item .icon {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .feature-item .label {
+            font-size: 14px;
+            color: #666;
+            font-weight: bold;
+        }
+
+        .footer-text {
+            margin-top: 30px;
+            color: #999;
+            font-size: 14px;
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                padding: 40px 25px;
+            }
+            
+            .logo {
+                font-size: 35px;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="logo">
+            🐦 Mini Twitter
+        </div>
+        
+        <p class="subtitle">
+            Connect with the world, share your thoughts
+        </p>
+
+        
+        <div class="btn-group">
+            <a href="auth/login.php" class="btn btn-primary">
+                🔐 Login
+            </a>
+            <a href="auth/register.php" class="btn btn-secondary">
+                📝 Create Account
+            </a>
+        </div>
+
+        
+        <div class="features">
+            <div class="feature-item">
+                <div class="icon">💬</div>
+                <div class="label">Post & Share</div>
+            </div>
+            <div class="feature-item">
+                <div class="icon">👥</div>
+                <div class="label">Connect</div>
+            </div>
+            <div class="feature-item">
+                <div class="icon">📱</div>
+                <div class="label">Mobile Ready</div>
+            </div>
+        </div>
+
+        <div class="footer-text">
+            © 2026 Mini Twitter. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>

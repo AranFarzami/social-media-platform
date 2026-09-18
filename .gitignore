@@ -1,0 +1,9 @@
+/vendor/
+.env
+*.log
+.DS_Store
+Thumbs.db
+
+# User uploaded files
+/uploads/avatars/*
+!/uploads/avatars/.gitkeep
